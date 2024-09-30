@@ -1,0 +1,10 @@
+def generate_hollow_square(n):
+  for i in range(n):
+    if i == 0 or i == n - 1:
+      print("x" * n) # Print full line for the top and bottom
+    else:
+      print("x" + " " * (n - 2) + "x") # Print hollow line
+
+if __name__ == "__main__":
+  n = int(input("Enter the side length of the square: "))
+  generate_hollow_square(n)
