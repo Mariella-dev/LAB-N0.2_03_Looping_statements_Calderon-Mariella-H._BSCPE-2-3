@@ -1,0 +1,6 @@
+# Input the height of the triangle from the user
+triangle_height = int(input("Enter the height of the triangle: "))
+
+#Using a Loop to Display a Triangle
+for i in range(triangle_height, 0, -1):
+    print('*' * i)
