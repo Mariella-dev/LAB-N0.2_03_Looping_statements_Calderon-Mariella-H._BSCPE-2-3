@@ -1,0 +1,14 @@
+# Function to compute cubes
+def compute_cube(array):
+    return [x ** 3 for x in array]
+
+# Main code
+if __name__ == "__main__":
+    size = int(input("Enter the size of the array: "))
+    array = list(map(int, input("Enter the elements separated by space: ").split()))
+    
+    # Get the cubes and display
+    cube_array = compute_cube(array)
+    print("Cube of each element:")
+    for cube in cube_array:
+        print(cube)
